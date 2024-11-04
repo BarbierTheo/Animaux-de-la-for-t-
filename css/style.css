@@ -12,13 +12,26 @@ h1{
 }
 
 img{
-    width: 10rem;
+    width: 9rem;
     height: auto;
     object-fit: cover;
+    margin: 0.5rem;
+    border: 0.2rem solid white;
 }
 
 
 .galerie{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galerie>img{
+  filter: grayscale(5);
+}
+
+img:hover {
+  filter: none;
+  transition: 0.9s;
+  transform: scale(1.1)
 }
